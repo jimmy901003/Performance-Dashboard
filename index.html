@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>合約獎金分析</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>9月業績狀況總覽</h1>
+        <div class="kpi-container">
+            <div class="kpi-card">
+                <div class="kpi-title">簽約總計 / 筆數</div>
+                <div class="kpi-value-container">
+                    <div class="kpi-value">2,713,330 元 / 96筆</div>
+                    <div class="kpi-change positive">▲ 11筆</div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">臨訂總計</div>
+                <div class="kpi-value">960,100 元</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">業績總計</div>
+                <div class="kpi-value">3,673,430 元</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">簽約狀況</div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>簽約人</th>
+                            <th class="amount">簽約金額</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="individual-row top-performer">
+                            <td>王羿淨 <span class="top-badge"> 👑</span></td>
+                            <td class="amount">1,345,000</td>
+                        </tr>
+                        <tr class="individual-row">
+                            <td>潘姿菁</td>
+                            <td class="amount">1,162,980</td>
+                        </tr>
+                        <tr class="individual-row">
+                            <td>彭子芸</td>
+                            <td class="amount">201,750</td>
+                        </tr>
+                        <tr class="individual-row">
+                            <td>幸雅芳</td>
+                            <td class="amount">3,600</td>
+                        </tr>
+                        <tr class="individual-row">
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">簽約分佈</div>
+            <div class="chart-container">
+                <div class="chart-wrapper">
+                    <canvas id="contractChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">簽約金額與實際吃餐金額對比(9月已結案)</div>
+            <div class="hue-chart-container">
+                <canvas id="hueChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
